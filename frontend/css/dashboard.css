@@ -1,0 +1,30 @@
+/**
+Customized Bootstrap Styles
+**/
+.glyphicon {
+	line-height: 3;
+}
+
+/**
+General Styles
+**/
+.profile-bar {
+	margin-top: 50px;
+	background: #ecf0f1;
+	width: 100%;
+	height: 100px;
+}
+
+.trainer-pic {
+	margin-top: 10px;
+	width: 80px;
+	height: 80px;
+}
+
+.trainer-pic img {
+	width: 80px;
+	height: 80px;
+	border-radius: 500px;	
+}
+
+
