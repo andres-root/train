@@ -4,8 +4,11 @@
 		<title>Fitness.me</title>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <link rel="stylesheet" id="style-css" href="https://necolas.github.io/normalize.css/3.0.1/normalize.css" type="text/css" media="all">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/search.css">
+        
 	</head>
 	<body>
 		<div class="wrapper">
@@ -48,9 +51,6 @@
 				      </form>
 				      <ul class="nav navbar-nav navbar-right">
 				        <li><a href="#">Sign Up</a></li>
-				        <li><a href="#">Sign In</a></li>
-				     <!--    <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 				          <ul class="dropdown-menu">
 				            <li><a href="#">Action</a></li>
 				            <li><a href="#">Another action</a></li>
@@ -58,7 +58,7 @@
 				            <li class="divider"></li>
 				            <li><a href="#">Separated link</a></li>
 				          </ul>
-				        </li> -->
+				        </li> 
 				      </ul>
 				    </div><!-- /.navbar-collapse -->
 				  </div><!-- /.container-fluid -->
@@ -79,13 +79,334 @@
 			      <div class="container-fluid">
 			      	<div class="row">
 			      		<div class="col-lg-4">Map</div>
-			      		<div class="col-lg-8">Information</div>
+			      		<div class="col-lg-8">
+			      			<div class="row filters">
+			      				<div class="col-md-4">
+					        		<input class="form-control" placeholder="CITY OR ZIP CODE">
+					        	</div>
+						        <div class="col-md-4">
+						        	<input class="form-control" placeholder="KEYCODE">
+						        </div>
+						        <div class="col-md-4">
+						        	<p>
+									  <label for="amount">Price range:</label>
+									  <input type="text" id="amount" style="border:0; font-weight:bold;">
+									</p>
+									 
+									<div id="slider-range"></div>
+								</div>
+					        </div>
+			      			<div class="row filters">
+			      				<div class="col-md-8">
+			      					<h4>Filters</h4>
+			      					<p>
+			      						Select as many as you want to narrow your search.
+			      					</p>
+			      					<span class="label label-info">Group</span>
+			      					<span class="label label-info">Individual</span>
+			      					<span class="label label-info">Weight loss</span>
+			      					<span class="label label-info">Endurance</span>
+			      					<span class="label label-info">Has facilities</span>
+			      					<span class="label label-info">Swimming</span>
+			      					<span class="label label-info">Male</span>
+			      					<span class="label label-info">Female</span>
+			      					<span class="label label-info">Promotion</span>
+			      					<span class="label label-info">Group Rate</span>
+			      					<span class="label label-default">More...</span>
+			      				</div>
+			      				<div class="col-md-4">
+			      					
+			      				</div>
+					        </div>
 			      	</div>
 			      </div>
 				</section><!--End Second Section-->
+				<section class="third">
+					<div class="container-fluid grid-trainers">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="trainer">
+									<header class="row">
+
+									</header>
+									<h1>JJ Fitness</h1>
+									<div class="row">
+										<div class="data">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="container">
+														<div class="stars col-sm-4">
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+														</div>
+														<div class="city col-sm-4">
+															<p>San Jose, CA</p>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="container">
+														<div class="col-sm-12">
+															<span class="label label-info">Nice</span>
+								      					<span class="label label-info">Makes you work</span>
+								      					<span class="label label-info">Flexible</span>
+								      					<span class="label label-default">More...</span>
+													</div>
+
+													</div>
+													
+												</div>
+											</div>
+											<div class="col-md-4 divisor">
+												<h1>$ 70</h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="trainer">
+									<header class="row">
+
+									</header>
+									<h1>Joe’s Fit</h1>
+									<div class="row">
+										<div class="data">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="container">
+														<div class="stars col-sm-4">
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+														</div>
+														<div class="city col-sm-4">
+															<p>San Jose, CA</p>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="container">
+														<div class="col-sm-12">
+															<span class="label label-info">Nice</span>
+								      					<span class="label label-info">Makes you work</span>
+								      					<span class="label label-info">Flexible</span>
+								      					<span class="label label-default">More...</span>
+													</div>
+
+													</div>
+													
+												</div>
+											</div>
+											<div class="col-md-4 divisor">
+												<h1>$ 60</h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- End Trainer -->
+							<div class="col-md-4">
+								<div class="trainer">
+									<header class="row">
+
+									</header>
+									<h1>Erica’s Jazzersize</h1>
+									<div class="row">
+										<div class="data">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="container">
+														<div class="stars col-sm-4">
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+														</div>
+														<div class="city col-sm-4">
+															<p>San Jose, CA</p>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="container">
+														<div class="col-sm-12">
+															<span class="label label-info">Nice</span>
+								      					<span class="label label-info">Makes you work</span>
+								      					<span class="label label-info">Flexible</span>
+								      					<span class="label label-default">More...</span>
+													</div>
+
+													</div>
+													
+												</div>
+											</div>
+											<div class="col-md-4 divisor">
+												<h1>$ 90</h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- End Trained-->
+						</div><!-- End Row -->
+						<div class="row">
+							<div class="col-md-4">
+								<div class="trainer">
+									<header class="row">
+
+									</header>
+									<h1>Abs-4-days</h1>
+									<div class="row">
+										<div class="data">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="container">
+														<div class="stars col-sm-4">
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+														</div>
+														<div class="city col-sm-4">
+															<p>San Jose, CA</p>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="container">
+														<div class="col-sm-12">
+															<span class="label label-info">Nice</span>
+								      					<span class="label label-info">Makes you work</span>
+								      					<span class="label label-info">Flexible</span>
+								      					<span class="label label-default">More...</span>
+													</div>
+
+													</div>
+													
+												</div>
+											</div>
+											<div class="col-md-4 divisor">
+												<h1>$ 40</h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="trainer">
+									<header class="row">
+
+									</header>
+									<h1>Swol</h1>
+									<div class="row">
+										<div class="data">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="container">
+														<div class="stars col-sm-4">
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+														</div>
+														<div class="city col-sm-4">
+															<p>San Jose, CA</p>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="container">
+														<div class="col-sm-12">
+															<span class="label label-info">Nice</span>
+								      					<span class="label label-info">Makes you work</span>
+								      					<span class="label label-info">Flexible</span>
+								      					<span class="label label-default">More...</span>
+													</div>
+
+													</div>
+													
+												</div>
+											</div>
+											<div class="col-md-4 divisor">
+												<h1>$ 65</h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- End Trainer -->
+							<div class="col-md-4">
+								<div class="trainer">
+									<header class="row">
+
+									</header>
+									<h1>Beef</h1>
+									<div class="row">
+										<div class="data">
+											<div class="col-md-8">
+												<div class="row">
+													<div class="container">
+														<div class="stars col-sm-4">
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+															<span class="glyphicon glyphicon-star"></span>
+														</div>
+														<div class="city col-sm-4">
+															<p>San Jose, CA</p>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="container">
+														<div class="col-sm-12">
+															<span class="label label-info">Nice</span>
+								      					<span class="label label-info">Makes you work</span>
+								      					<span class="label label-info">Flexible</span>
+								      					<span class="label label-default">More...</span>
+													</div>
+
+													</div>
+													
+												</div>
+											</div>
+											<div class="col-md-4 divisor">
+												<h1>$ 40</h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- End Trained-->
+						</div>
+					</div>
+				</section>
 		</div>
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+
+  $(function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
+  </script>
 	</body>
 </html>
