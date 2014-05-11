@@ -24,7 +24,24 @@ General Styles
 .trainer-pic img {
 	width: 80px;
 	height: 80px;
-	border-radius: 500px;	
+	border: 1px solid #ccc;
+	border-radius: 500px;
+}
+
+.trainer-data {
+	color: #7f8c8d;	
+}
+
+.trainer-data h3 {
+	margin-top: 35px;	
+}
+
+.trainer-data p {
+	font-style: italic;
+}
+
+.first .content {
+	margin-left: 250px;
 }
 
 
