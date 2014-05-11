@@ -1,0 +1,5 @@
+venv
+venv/*
+*.pyc
+src/tbio/settings.py
+.Ds_Store
