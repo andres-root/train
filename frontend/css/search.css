@@ -1,0 +1,19 @@
+/**
+Bootstrap Customized Styles
+**/
+
+
+/**
+General Styles
+**/
+.first {
+	margin-top: 50px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.second {
+	width: 100%;
+	height: 300px;
+	background: #ccc;
+}
